@@ -17,6 +17,10 @@
                 background-size: cover;
                 min-height: 1000px;
             }
+            .section {
+                padding-top: 4vw;
+                padding-bottom: 4vw;
+            }
             @media screen and (max-width: 670px) {
                 header {
                     min-height: 500px;
@@ -26,16 +30,6 @@
         </style>
     </head>
     <body>
-        <!--
-        Images:
-        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/city.jpg
-        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/man.jpg
-        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/nature.jpg
-        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/portrait.jpg
-        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/stars.jpg
-        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/street.jpg
-        -->
-
         <!-- navbar -->
         <header>
             <nav class="nav-wrapper transparent">
@@ -59,6 +53,61 @@
         </header>
 
         <!-- photo / grid -->
+        <section class="container section" id="photos">
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/portrait.jpg"
+                        alt="Portrait" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                    <h2 class="indigo-text text-darken-4">
+                        Portraits
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque aut delectus dolor doloribus dolorum eius eos esse ex expedita harum magnam, molestias obcaecati optio quas, quisquam repellat similique veritatis.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4 push-l7 offset-l1">
+                    <img src="https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/city.jpg"
+                        alt="Cityscapes" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 pull-l5 right-align offset-l1">
+                    <h2 class="indigo-text text-darken-4">
+                        Cityscapes
+                    </h2>
+                    <p>
+                        Beatae ea fuga odio repellendus soluta? Architecto aspernatur esse exercitationem laborum quae quia repellendus sed tempora, unde. Ad fugit iste iure maiores minima minus, odit omnis qui quos recusandae velit?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/nature.jpg"
+                        alt="Nature" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                    <h2 class="indigo-text text-darken-4">
+                        Nature
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi culpa fugiat id itaque reprehenderit sed. Adipisci eligendi excepturi iste libero minus neque, optio ut? Dolorum nemo nihil sapiente suscipit.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--
+        Images:
+        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/city.jpg
+        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/man.jpg
+        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/nature.jpg
+        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/portrait.jpg
+        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/stars.jpg
+        https://github.com/iamshaunjp/materialize-playlist/raw/lesson-16/img/street.jpg
+        -->
+
+
 
         <!-- parallax -->
 
@@ -76,6 +125,7 @@
         <script>
             $(document).ready(function () {
                 $('.sidenav').sidenav();
+                $('.materialboxed').materialbox();
             });
         </script>
     </body>
